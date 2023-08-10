@@ -1,0 +1,87 @@
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 96%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: aliceblue;
+    font-size: 17px;
+    font-family: 'Oswald';
+    padding: 5px;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    border: none;
+}
+
+.banner1 {
+    background-image: url('https://i.pinimg.com/564x/0e/82/38/0e8238939967f25a8da8183a39ca8cf1.jpg');
+    border: none;
+}
+
+.banner2 {
+    background-image: url('https://i.pinimg.com/564x/d9/ef/92/d9ef921b27851153be8c4cb2aaf7b9b4.jpg');
+    border: none;
+}
+
+.banner3 {
+    background-image: url('https://i.pinimg.com/564x/65/1c/c8/651cc8cf1ebac2a83861b4ad9242eaa5.jpg');
+    border: none;
+    background-position: 65%;
+}
+
+.load {
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.load-button {
+    width: 150px;
+    height: 100%;
+    border: none;
+    border-radius: 4px;
+    background-color: #d21617;
+    color: aliceblue;
+    font-size: 18px;
+    font-family: 'Oswald';
+    cursor: pointer;
+    transition: 0.8s;
+}
+    .load-button:hover {
+        background-color: aliceblue;
+        color: black;
+    }
+
+@media (max-width: 768px) {
+
+    .cards-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card {
+        width: 97%;
+    }
+}

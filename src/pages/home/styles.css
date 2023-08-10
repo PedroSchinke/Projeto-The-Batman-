@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+#banner {
+    background-position: bottom;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    background-image: linear-gradient(
+        to bottom, 
+        transparent 0%, 
+        rgba(0, 0, 0, 0.014),
+        rgba(0, 0, 0, 0.048) 30%, 
+        black 98%), 
+        url(https://i.redd.it/6092ltrt8nt71.jpg);
+}
+
+.trailer-sinopse {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.trailer-sinopse-span {
+    color: #d21617;
+    font-size: 35px;
+    font-family: 'Oswald';
+}
+
+.elenco {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.elenco-span {
+    color: #d21617;
+    font-size: 35px;
+    font-family: 'Oswald';
+}
+
+@media (max-width: 768px) {
+
+    #banner {
+        height: 194px;
+    }
+
+    .trailer-sinopse {
+        height: 80px;
+    }
+}
